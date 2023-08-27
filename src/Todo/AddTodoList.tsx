@@ -45,23 +45,25 @@ const AddTodoList = () => {
   };
 
   return (
-    <div className="todo-input">
+    <div>
       <h4>TODO-LIST</h4>
-      <input
-        value={savetxt}
-        onChange={(event) => setsavetxt(event.target.value)}
-      ></input>
+      <div className="posting">
+        <input
+          value={savetxt}
+          onChange={(event) => setsavetxt(event.target.value)}
+        ></input>
 
-      <Button onClick={() => addItem()} variant="warning">
-        추가
-      </Button>
-      <hr></hr>
-
-      <TodoBorder
-        todolist={todolist}
-        todoupdatelist={todoupdatelist}
-        modifytodolist={modifytodolist}
-      ></TodoBorder>
+        <Button onClick={() => addItem()} variant="warning">
+          추가
+        </Button>
+        <hr></hr>
+        </div>
+        <TodoBorder
+          todolist={todolist}
+          todoupdatelist={todoupdatelist}
+          modifytodolist={modifytodolist}
+        ></TodoBorder>
+      
     </div>
   );
 };

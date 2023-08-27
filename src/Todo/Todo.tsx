@@ -49,10 +49,12 @@ const Todo = (props: any) => {
 
   return (
     <div>
-      <div className="todo-items">
-        <h2>{props.items.todolisttitle}</h2>
+      <div>
+        <hr></hr>
+        <h4>{props.items.todolisttitle}</h4>
         <Button onClick={() => props.todoupdatelist(props.items)}>삭제</Button>
         <Button onClick={() => ModalShowon()}>수정</Button>
+        <hr></hr>
       </div>
 
       <div>

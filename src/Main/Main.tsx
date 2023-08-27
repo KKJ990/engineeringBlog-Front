@@ -4,15 +4,14 @@ import MainBorder from "./MainBorder";
 
 const Main = () => {
   return (
-    <div className="todo-root">
+    <div className="root">
       <Maintitle />
-
-      <div className="todo-main">
-        <div className="todo-sidebar">
+      <div className="main">
+        <div className="sidebar">
           <MainSidebar />
         </div>
 
-        <div className="todo-post">
+        <div className="post">
           <MainBorder />
         </div>
 
