@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import "./AddTodoList";
 import Todo from "./Todo";
 import "../App.css";
-import Test from "./test";
 
 const TodoBorder = (props: any) => {
   return (
-    <div className="todo-border">
+  <div style={{padding: "20px"}}>  
+    <div className="posting">
       {props.todolist.map((item: any) => (
         <Todo
           items={item}
@@ -14,8 +14,8 @@ const TodoBorder = (props: any) => {
           modifytodolist={props.modifytodolist}
         />
       ))}
-      <div></div>
     </div>
+  </div>
   );
 };
 export default TodoBorder;

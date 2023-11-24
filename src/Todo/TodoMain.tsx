@@ -2,7 +2,7 @@ import AddTodoList from "./AddTodoList";
 
 const TodoMain = () => {
   return (
-    <div className="todo-post">
+    <div style={{padding:"50px"}}>
       <AddTodoList />
     </div>
   );

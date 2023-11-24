@@ -41,7 +41,6 @@ const GitBorder = () => {
 
   const changeHandler = (checked: boolean, id: number) => {
     if (checked) {
-      // setcheckbtlist(()=>[...checkbtlist,id])
       setcheckinglist((prev) => {
         let cp = [...prev];
         cp.push({ id: id, checked: checked });
@@ -49,7 +48,6 @@ const GitBorder = () => {
         return cp;
       });
     } else {
-      // setcheckbtlist(()=>checkbtlist.filter((item:any) => item!==id))
       setcheckinglist((prev) => {
         let cp = [...prev];
         cp = cp.filter((d) => d.id !== id);
@@ -138,13 +136,13 @@ const GitBorder = () => {
   };
 
   return (
-    <div>
+    <div style={{padding:"30px"}}>
       <div>
-        <h3 style={{ fontWeight: "bolder" }}>GitHub</h3>
+        <h3 className="menuTitle">GitHub</h3>
       </div>
-
-      <hr></hr>
+        <hr></hr>
       <div className="posting">
+      
         <div>
           <input type="checkbox"></input>
         </div>

@@ -7,14 +7,14 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 const Todotitle = () => {
   return (
-    <div className="todo-title">
-      <div className="todo-icon">
-        <a href="https://www.instagram.com/" target="_blank">
+    <div className="title">
+      <div className="icon">
+        <a href="https://www.instagram.com/97___junny" target="_blank">
           <FontAwesomeIcon icon={faInstagram} size="4x" />
         </a>
       </div>
-      <div className="main-title">BLOG</div>
-      <div className="todo-icon">
+      <div className=" blogtitle">BLOG</div>
+      <div className="icon">
         <a href="https://ko-kr.facebook.com/" target="_blank">
           <FontAwesomeIcon icon={faFacebook} size="2xl" />
         </a>
