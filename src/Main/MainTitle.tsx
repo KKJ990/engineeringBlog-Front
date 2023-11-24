@@ -3,8 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
   faFacebook,
-  faTwitch,
+    faTwitter
 } from "@fortawesome/free-brands-svg-icons";
+
 const Todotitle = () => {
   return (
     <div className="title">
@@ -19,7 +20,7 @@ const Todotitle = () => {
           <FontAwesomeIcon icon={faFacebook} size="2xl" />
         </a>
         <a href="https://www.twitter.com/" target="_black">
-          <FontAwesomeIcon icon={faTwitch} size="2xl" />
+            <FontAwesomeIcon icon={faTwitter} size="2xl" />
         </a>
       </div>
     </div>

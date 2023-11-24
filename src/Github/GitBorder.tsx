@@ -127,14 +127,12 @@ const GitBorder = () => {
   const ModalState = (check: boolean) => {
     setmodalShow(check);
   };
-
   const [idx, setIdx] = useState<Number>();
   const UpdateModalState = (check: boolean, idx: number) => {
     setIdx(idx); 
     setUpdateModalShow(check);
 
   };
-
   return (
     <div style={{padding:"30px"}}>
       <div>
@@ -159,7 +157,6 @@ const GitBorder = () => {
       <hr></hr>
 
       <ReadPost />
-
       <div className="postbottom">
         <Button className="postbutton" onClick={() => ModalState(true)}>
           등록

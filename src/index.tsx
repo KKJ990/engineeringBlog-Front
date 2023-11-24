@@ -6,6 +6,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import Main from './Main/Main';
+import Login from "./Login/Login";
 
 
 
@@ -15,7 +16,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <BrowserRouter>
-    <Main/>
+    <Login/>
   </BrowserRouter>
 );
 

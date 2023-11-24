@@ -1,53 +1,133 @@
-a {
-  text-decoration: none;
-  color: yellow;
-  display:flex;
+@import '~antd/dist/reset.css';
+.App {
+  text-align: center;
 }
-.title {
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.todo-main {
+  width: 100%;
+  display: flex;
+
+  .todo-sidebar {
+    background: #263343;
+    color: white;
+
+    .todo-menu {
+      border: 10px solid gray;
+      padding: 10px;
+    }
+    .todo-menu:hover {
+      background-color: black;
+      border-radius: 4px;
+    }
+  }
+
+  .todo-title {
+    width: 100%;
+    height: 80px;
+    background: #263343;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px 12px;
+
+    .todo-icon {
+      font-size: 20px;
+      padding: 10px;
+      color: yellow;
+    }
+    .main-title {
+      font-size: xxx-large;
+    }
+  }
+
+  .todo-post {
+    width: 100%;
+    height: 100%;
+    border: 1px;
+    float: center;
+    width: 50%;
+    padding: 40px;
+    flex: 120;
+
+    .todo-input {
+      width: 200%;
+      height: 100%;
+      border: 1px solid lightblue;
+      padding: 10px;
+    }
+
+    .todo-border {
+      width: 100%;
+      height: 100%;
+      border: 1px;
+
+      .todo-items {
+        width: 95%;
+        height: 100%;
+        border: 1px solid lightblue;
+      }
+    }
+  }
+}
+
+.todo-title {
   width: 100%;
   height: 80px;
   background: #263343;
   color: white;
   display: flex;
   justify-content: space-between;
-  font-size: xxx-large;
   align-items: center;
   padding: 20px 20px;
 
-  .icon {
+  .todo-icon {
     font-size: 20px;
-    padding: 30px;
-    display: flex;
+    padding: 10px;
     color: yellow;
   }
- 
-}
-
-
-.main {
-  width: 100%;
-  display: flex;
-
-  .sidebar {
-    background: #263343;
-    color: white;
-
-    .menu {
-      border: 10px solid gray;
-      padding: 10px;
-    }
-    .menu:hover {
-      background-color: black;
-      border-radius: 4px;
-    }
+  .main-title {
+    font-size: xxx-large;
   }
-
 }
 
+a {
+  text-decoration: none;
+  color: yellow;
+}
+
+.gittitle {
+  display: flex;
+}
 
 .posting {
   display: flex;
-  width: 1000px;
 
   .posttitle {
     width: 30%;
@@ -79,16 +159,10 @@ a {
     }
   }
 }
-.menuTitle{
-  font-weight: "bolder";
-  text-align: center;
-}
-
 .postbottom {
   display: flex;
   float: right;
   padding: 50px;
-
   .postbutton {
     padding: 10px;
     border: 10px;

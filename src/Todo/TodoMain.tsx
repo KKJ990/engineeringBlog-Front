@@ -1,10 +1,10 @@
 import AddTodoList from "./AddTodoList";
 
 const TodoMain = () => {
-  return (
-    <div style={{padding:"50px"}}>
-      <AddTodoList />
-    </div>
-  );
+    return (
+        <div className="todo-post">
+            <AddTodoList/>
+        </div>
+    );
 };
 export default TodoMain;
